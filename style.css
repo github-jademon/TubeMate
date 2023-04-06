@@ -10,7 +10,7 @@
   height: 100%;
 }
 
-.bar {
+.bar-nav {
   position: sticky;
   top: 0;
   display: flex;
@@ -25,5 +25,23 @@
 }
 
 .container {
-  height: calc(100% - 45px);
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 90px);
+  margin: 10px;
+  margin-bottom: 54px;
+}
+
+.bar-footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  background-color: #ddd;
+  border: none;
+  border-top: 1px solid #ddd;
 }

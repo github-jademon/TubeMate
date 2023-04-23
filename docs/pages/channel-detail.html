@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://supsok.github.io/gbsw/touchstrap/css/touchstrap.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://supsok.github.io/gbsw/touchstrap/js/touchstrap.js"></script>
+
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("../js/service-worker.js") // serviceWorker 파일 경로
+            .then((reg) => {
+              console.log("Service worker registered.", reg);
+            })
+            .catch((e) => console.log(e));
+        });
+      }
+    </script>
+
+    <script type="module" src="../js/index.js"></script>
+    <link rel="stylesheet" href="../style/global.css" />
+    <title>TubeMate</title>
+  </head>
+  <body>
+    <section class="page center" id="page01">
+      <header class="bar bar-nav bar-light bg-white">
+        <a href="../index.html" data-control="push" class="title">
+          <img src="../images/tube-mate.png" class="logo" />
+        </a>
+      </header>
+
+      <main class="content channel-details">
+        <div class="channel-detail">hi</div>
+        <ul class="lists">
+          <li class="list">
+            <a
+              href="./video-detail.html"
+              data-control="push"
+              class="list-video-item list-item"
+            >
+              <div class="list-number">1.</div>
+              <div>
+                <img src="http://placehold.it/140x84" />
+              </div>
+              <div class="list-video">
+                <div class="list-video-title">첫영상!</div>
+                <div class="list-profile">
+                  <div class="list-profile-text">조회수 00회</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="list">
+            <a
+              href="./video-detail.html"
+              data-control="push"
+              class="list-video-item list-item"
+            >
+              <div class="list-number">2.</div>
+              <div>
+                <img src="http://placehold.it/140x84" />
+              </div>
+              <div class="list-video">
+                <div class="list-video-title">첫영상!</div>
+                <div class="list-profile">
+                  <div class="list-profile-text">조회수 00회</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="list">
+            <a
+              href="./video-detail.html"
+              data-control="push"
+              class="list-video-item list-item"
+            >
+              <div class="list-number">3.</div>
+              <div>
+                <img src="http://placehold.it/140x84" />
+              </div>
+              <div class="list-video">
+                <div class="list-video-title">첫영상!</div>
+                <div class="list-profile">
+                  <div class="list-profile-text">조회수 00회</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="list">
+            <a
+              href="./video-detail.html"
+              data-control="push"
+              class="list-video-item list-item"
+            >
+              <div class="list-number">4.</div>
+              <div>
+                <img src="http://placehold.it/140x84" />
+              </div>
+              <div class="list-video">
+                <div class="list-video-title">첫영상!</div>
+                <div class="list-profile">
+                  <div class="list-profile-text">조회수 00회</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="list">
+            <a
+              href="./video-detail.html"
+              data-control="push"
+              class="list-video-item list-item"
+            >
+              <div class="list-number">5.</div>
+              <div>
+                <img src="http://placehold.it/140x84" />
+              </div>
+              <div class="list-video">
+                <div class="list-video-title">첫영상!</div>
+                <div class="list-profile">
+                  <div class="list-profile-text">조회수 00회</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="list">
+            <a
+              href="./video-detail.html"
+              data-control="push"
+              class="list-video-item list-item"
+            >
+              <div class="list-number">6.</div>
+              <div>
+                <img src="http://placehold.it/140x84" />
+              </div>
+              <div class="list-video">
+                <div class="list-video-title">첫영상!</div>
+                <div class="list-profile">
+                  <div class="list-profile-text">조회수 00회</div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="list">
+            <a
+              href="./video-detail.html"
+              data-control="push"
+              class="list-video-item list-item"
+            >
+              <div class="list-number">7.</div>
+              <div>
+                <img src="http://placehold.it/140x84" />
+              </div>
+              <div class="list-video">
+                <div class="list-video-title">첫영상!</div>
+                <div class="list-profile">
+                  <div class="list-profile-text">조회수 00회</div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </main>
+
+      <footer>
+        <nav class="bar bar-tab bar-light bg-white">
+          <nav class="bar bar-tab bar-light bg-white">
+            <a href="./video-detail.html" data-control="push" class="tab-item">
+              <img src="../images/icon/person.png" class="tab-any" />
+            </a>
+            <a href="../index.html" data-control="push" class="tab-item">
+              <img src="../images/icon/search.png" class="tab-any" />
+            </a>
+            <a href="./rank-video.html" data-control="push" class="tab-item">
+              <img src="../images/icon/video.png" class="tab-any" />
+            </a>
+          </nav>
+        </nav>
+      </footer>
+    </section>
+  </body>
+</html>

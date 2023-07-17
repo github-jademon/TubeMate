@@ -28,7 +28,7 @@
       }
     </script>
 
-    <script type="module" src="../js/index.js"></script>
+    <script type="module" src="../js/channel-detail.js"></script>
     <link rel="stylesheet" href="../style/global.css" />
     <title>TubeMate</title>
   </head>
@@ -40,8 +40,27 @@
         </a>
       </header>
 
-      <main class="content channel-details">
-        <div class="channel-detail">hi</div>
+      <main class="content content-padded">
+        <div class="channel-details">
+          <div class="channel-banner-img">
+            <img src="http://placehold.it/380x84" />
+          </div>
+          <div class="channel-profile">
+            <div class="channel-profile-img">
+              <img src="http://placehold.it/64x64" />
+            </div>
+            <div class="channel-name">채널명</div>
+            <div class="channer-info">
+              <div class="channel-count">구독자 00명</div>
+              <div class="channel-date">동영상 00개</div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="channel-date">소개</div>
+            <img src="../images/icon/see-more.png" class="list-icon" />
+            <div class="channel-date">소개입니다.</div>
+          </div>
+        </div>
         <ul class="lists">
           <li class="list">
             <a
@@ -174,17 +193,15 @@
 
       <footer>
         <nav class="bar bar-tab bar-light bg-white">
-          <nav class="bar bar-tab bar-light bg-white">
-            <a href="./video-detail.html" data-control="push" class="tab-item">
-              <img src="../images/icon/person.png" class="tab-any" />
-            </a>
-            <a href="../index.html" data-control="push" class="tab-item">
-              <img src="../images/icon/search.png" class="tab-any" />
-            </a>
-            <a href="./rank-video.html" data-control="push" class="tab-item">
-              <img src="../images/icon/video.png" class="tab-any" />
-            </a>
-          </nav>
+          <a href="./rank-channel.html" class="tab-item">
+            <img src="../images/icon/person.png" class="tab-any" />
+          </a>
+          <a href="../index.html" class="tab-item">
+            <img src="../images/icon/search.png" class="tab-any" />
+          </a>
+          <a href="./rank-video.html" class="tab-item">
+            <img src="../images/icon/video.png" class="tab-any" />
+          </a>
         </nav>
       </footer>
     </section>
